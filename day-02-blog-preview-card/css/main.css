@@ -1,0 +1,126 @@
+/* Fonts */
+@font-face {
+  font-family: 'Figtree';
+  src: url('../fonts/Figtree-Medium.woff2') format('woff2'),
+  url('../fonts/Figtree-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('../fonts/Figtree-ExtraBold.woff2') format('woff2'),
+  url('../fonts/Figtree-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* CUSTOM PROPS */
+:root {
+  /* colors */
+  --text-color-gray: #6B6B6B;
+  --text-hover: #F4D04E;
+  --body-background-color: #F4D04E;
+  --text-color-black: #111111;
+
+  /* fonts */
+  --heading-font-family: "Figtree", sans-serif;
+  --body-font-family: "Figtree", sans-serif;
+}
+
+/* GLOBAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: var(--body-font-family), sans-serif;
+  background: var(--body-background-color);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-box {
+  max-width: 380px;
+  max-height: 520px;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.card-description {
+  padding: 10px 0;
+}
+
+.card-description-btn {
+  padding: 6px 12px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--body-background-color);
+}
+
+.description-date {
+  padding-top: 10px;
+}
+
+.description-title {
+  padding: 14px 0;
+}
+
+.description-title:hover {
+  color: var(--text-hover);
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+
+.description {
+  padding: 6px 0 14px 0;
+  color: var(--text-color-gray);
+}
+
+.card-author {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-img img {
+  width: 42px;
+}
+
