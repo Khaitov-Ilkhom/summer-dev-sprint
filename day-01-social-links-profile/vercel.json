@@ -1,0 +1,10 @@
+{
+  "routes": [
+    {
+      "src": "/[^.]+",
+      "dest": "/",
+      "status": 200
+    }
+  ],
+  "rootDirectory": "day-01-social-links-profile"
+}
