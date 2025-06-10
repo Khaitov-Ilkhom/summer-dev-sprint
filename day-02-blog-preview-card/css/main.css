@@ -124,3 +124,15 @@ body {
   width: 42px;
 }
 
+@media only screen and (max-width: 576px) {
+  .container {
+    padding: 250px 0;
+  }
+
+  .card-box {
+    max-width: 300px;
+    width: 100%;
+    min-height: 500px;
+    height: 100%;
+  }
+}
