@@ -1,5 +1,4 @@
 /* FONTS */
-
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Bold.woff2") format("woff2"),
@@ -28,7 +27,6 @@
 }
 
 /* CUSTOM PROPS */
-
 :root {
   /* colors */
   --button-backgroun: #333333;
@@ -43,7 +41,6 @@
 }
 
 /* GLOBAL */
-
 html {
   box-sizing: border-box;
   height: 100%;
